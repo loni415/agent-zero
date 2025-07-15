@@ -4,6 +4,8 @@
 **/__pycache__/
 **/.conda/
 
+agent-zero-data
+
 # Ignore docker/run/agent-zero directory
 docker/run/agent-zero/
 
