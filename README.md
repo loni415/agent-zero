@@ -7,7 +7,6 @@
 
 [Introduction](#a-personal-organic-agentic-framework-that-grows-and-learns-with-you) •
 [Installation](./docs/installation.md) •
-[Hacking Edition](#hacking-edition) •
 [How to update](./docs/installation.md#how-to-update-agent-zero) •
 [Documentation](./docs/README.md) •
 [Usage](./docs/usage.md)
@@ -17,9 +16,13 @@
 
 <div align="center">
 
-> ### 📢 **NEWS: Agent Zero now includes MCP Server & Client functionality!** 📢
->
-> Agent Zero can now act as an MCP Server for other LLM tools and use external MCP servers as tools
+> ### 🚨 **IMPORTANT ANNOUNCEMENT** 🚨
+
+The original GitHub and DockerHub repositories for Agent Zero have been transferred to a new namespace:
+
+- **GitHub & DockerHub:** `agent0ai/agent-zero`
+
+From now on, please use this name for both `git clone` and `docker pull` commands.
 
 </div>
 
@@ -93,10 +96,6 @@
 
 - **Research** - `"Gather and summarize five recent AI papers about CoT prompting"`
 
-# Hacking Edition
-- Agent Zero also offers a Hacking Edition based on Kali linux with modified prompts for cybersecurity tasks
-- The setup is the same as the regular version, just use the frdel/agent-zero-run:hacking image instead of frdel/agent-zero-run
-> **Note:** The Hacking Edition and all its prompts and features will be merged into the main branch in the following release.
 
 
 # ⚙️ Installation
@@ -112,8 +111,8 @@ A detailed setup guide for Windows, macOS, and Linux with a video can be found i
 ```bash
 # Pull and run with Docker
 
-docker pull frdel/agent-zero-run
-docker run -p 50001:80 frdel/agent-zero-run
+docker pull agent0ai/agent-zero
+docker run -p 50001:80 agent0ai/agent-zero
 
 # Visit http://localhost:50001 to start
 ```
@@ -265,4 +264,4 @@ Default models set to gpt-4.1
 
 - [Join our Discord](https://discord.gg/B8KZKNsPpj) for live discussions or [visit our Skool Community](https://www.skool.com/agent-zero).
 - [Follow our YouTube channel](https://www.youtube.com/@AgentZeroFW) for hands-on explanations and tutorials
-- [Report Issues](https://github.com/frdel/agent-zero/issues) for bug fixes and features
+- [Report Issues](https://github.com/agent0ai/agent-zero/issues) for bug fixes and features
